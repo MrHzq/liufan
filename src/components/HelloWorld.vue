@@ -9,7 +9,7 @@
         name: 'HelloWorld',
         data() {
             return {
-                msg: 'Welcome to LiuFan'
+                msg: 'Welcome to LiuFan个人网站'
             };
         }
     };
