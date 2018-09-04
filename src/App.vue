@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        <router-view/>
+        <router-view class="royter-view" />
     </div>
 </template>
 
@@ -10,10 +10,13 @@
     };
 </script>
 
-<style>
+<style lang="less">
     #app {
         font-family: 'Avenir', Helvetica, Arial, sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+        .router-view {
+            padding-bottom: 75px;
+        }
     }
 </style>

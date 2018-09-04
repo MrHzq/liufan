@@ -2,7 +2,7 @@
  * @Author: hzq
  * @Date: 2018-08-28 17:45:25
  * @Last Modified by: hzq
- * @Last Modified time: 2018-09-03 22:35:26
+ * @Last Modified time: 2018-09-04 22:05:35
  * @文件说明: 首页页面
  */
 <template>
@@ -30,5 +30,8 @@
     .home {
         width: 1200px;
         margin: 0 auto;
+        background-image: url('../assets/home/home-bg.png');
+        background-position: left bottom;
+        background-size: cover;
     }
 </style>
