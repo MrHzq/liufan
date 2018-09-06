@@ -2,7 +2,7 @@
  * @Author: hzq
  * @Date: 2018-08-28 17:45:25
  * @Last Modified by: hzq
- * @Last Modified time: 2018-09-04 21:41:23
+ * @Last Modified time: 2018-09-06 21:42:11
  * @文件说明: 首页-头部组件
  */
 <template>
@@ -42,6 +42,7 @@
                 text-transform: uppercase;
             }
             .title-name {
+                display: block;
                 width: 330px;
                 margin-bottom: 50px;
                 margin-top: 30px;

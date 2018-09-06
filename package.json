@@ -12,6 +12,9 @@
   "dependencies": {
     "less": "^3.8.1",
     "less-loader": "^4.1.0",
+    "postcss-plugin-px2rem": "^0.7.0",
+    "postcss-px2rem": "^0.3.0",
+    "px2rem-loader": "^0.1.9",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
   },
