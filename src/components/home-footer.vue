@@ -2,7 +2,7 @@
  * @Author: hzq
  * @Date: 2018-08-28 17:45:25
  * @Last Modified by: hzq
- * @Last Modified time: 2018-09-08 12:24:50
+ * @Last Modified time: 2018-09-08 22:51:17
  * @文件说明: 首页-尾部组件
  */
 <template>
@@ -36,6 +36,9 @@
 
 <style lang='less' scoped>
     .home-footer {
+        width: 1200px;
+        margin: 0 auto;
+        padding-bottom: 110px;
         .contact-way {
             display: flex;
             align-items: center;

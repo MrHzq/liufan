@@ -2,7 +2,7 @@
  * @Author: hzq
  * @Date: 2018-08-28 17:45:25
  * @Last Modified by: hzq
- * @Last Modified time: 2018-09-08 12:29:53
+ * @Last Modified time: 2018-09-08 22:50:50
  * @文件说明: 首页页面
  */
 <template>
@@ -11,7 +11,7 @@
             <home-header class="home-header"></home-header>
             <div class="five-module">
                 <div class="module">
-                    <div class="web m" @click="$router.push('/web-index')">
+                    <div class="web m" @click="$router.push('/web-xlf')">
                         <div class="title">Web</div>
                         <div class="line"></div>
                         <img src="../assets/home/m-web.png" class="img">
@@ -40,7 +40,7 @@
                     </div>
                 </div>
             </div>
-            <home-footer class="home-footer"></home-footer>
+            <home-footer></home-footer>
         </div>
     </div>
 </template>
@@ -228,9 +228,6 @@
                     }
                 }
             }
-        }
-        .home-footer {
-            padding-bottom: 75px;
         }
     }
 </style>

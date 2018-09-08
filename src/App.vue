@@ -1,6 +1,8 @@
 <template>
     <div id="app">
-        <router-view class="royter-view" />
+        <keep-alive>
+            <router-view class="royter-view" />
+        </keep-alive>
     </div>
 </template>
 

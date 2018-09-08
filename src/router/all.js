@@ -2,7 +2,7 @@
  * @Author: hzq
  * @Date: 2018-08-28 17:50:19
  * @Last Modified by: hzq
- * @Last Modified time: 2018-09-08 12:28:48
+ * @Last Modified time: 2018-09-08 21:48:56
  * @文件说明: 所有路由处理
  */
 let all = [
@@ -14,7 +14,11 @@ let all = [
     path: 'about-me'
   },
   {
-    path: 'web-index',
+    path: 'web-xlf',
+    src: 'web/web-index'
+  },
+  {
+    path: 'web-yxy',
     src: 'web/web-index'
   }
 ];

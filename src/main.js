@@ -4,9 +4,11 @@ import Vue from 'vue';
 import App from './App';
 import router from './router';
 import LButton from './components/l-button';
+import LSideNav from './components/l-side-nav';
 import homeFooter from './components/home-footer';
 
 Vue.component('l-button', LButton);
+Vue.component('l-side-nav', LSideNav);
 Vue.component('home-footer', homeFooter);
 Vue.config.productionTip = false;
 
