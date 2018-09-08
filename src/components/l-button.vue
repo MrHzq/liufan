@@ -1,3 +1,10 @@
+/*
+ * @Author: hzq
+ * @Date: 2018-09-08 12:20:40
+ * @Last Modified by: hzq
+ * @Last Modified time: 2018-09-08 12:20:40
+ * @文件说明: 按钮
+ */
 <template>
     <div class='l-button' :style="{width:width}" @click="gopage">
         <slot></slot>

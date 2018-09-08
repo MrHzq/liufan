@@ -2,7 +2,7 @@
  * @Author: hzq
  * @Date: 2018-08-28 17:45:25
  * @Last Modified by: hzq
- * @Last Modified time: 2018-09-06 22:32:04
+ * @Last Modified time: 2018-09-08 12:29:53
  * @文件说明: 首页页面
  */
 <template>
@@ -11,29 +11,29 @@
             <home-header class="home-header"></home-header>
             <div class="five-module">
                 <div class="module">
-                    <div class="web m">
+                    <div class="web m" @click="$router.push('/web-index')">
                         <div class="title">Web</div>
                         <div class="line"></div>
                         <img src="../assets/home/m-web.png" class="img">
                     </div>
-                    <div class="mobile m">
+                    <div class="mobile m" @click="$router.push('/mobile-index')">
                         <div class="title">手机端</div>
                         <div class="line"></div>
                         <img src="../assets/home/m-mobile.png" class="img">
                     </div>
                 </div>
                 <div class="module">
-                    <div class="plane m">
+                    <div class="plane m" @click="$router.push('/plane-index')">
                         <div class="title">平面</div>
                         <div class="line"></div>
                         <img src="../assets/home/m-plane.png" class="img">
                     </div>
-                    <div class="hand m">
+                    <div class="hand m" @click="$router.push('/hand-index')">
                         <div class="title">手绘</div>
                         <div class="line"></div>
                         <img src="../assets/home/m-hand.png" class="img">
                     </div>
-                    <div class="logo m">
+                    <div class="logo m" @click="$router.push('/logo-index')">
                         <div class="title">LOGO</div>
                         <div class="line"></div>
                         <img src="../assets/home/m-logo.png" class="img">
@@ -46,11 +46,10 @@
 </template>
 
 <script>
-    import homeFooter from '../components/home-footer';
     import homeHeader from '../components/home-header';
     export default {
         name: 'home',
-        components: {homeFooter, homeHeader},
+        components: {homeHeader},
         data() {
             return {};
         },

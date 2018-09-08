@@ -2,7 +2,7 @@
  * @Author: hzq
  * @Date: 2018-08-28 17:45:25
  * @Last Modified by: hzq
- * @Last Modified time: 2018-09-04 22:17:34
+ * @Last Modified time: 2018-09-08 12:24:50
  * @文件说明: 首页-尾部组件
  */
 <template>
@@ -14,7 +14,7 @@
                 <li class="left-li">邮箱：liufan94@163.com</li>
             </ul>
             <div class="right">
-                <l-button width="320px">我的简历</l-button>
+                <l-button width="1.66666rem">我的简历</l-button>
             </div>
         </div>
         <div class="contact-p">

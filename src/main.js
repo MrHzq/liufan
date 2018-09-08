@@ -3,8 +3,11 @@
 import Vue from 'vue';
 import App from './App';
 import router from './router';
-import LButton from './components/LButton';
+import LButton from './components/l-button';
+import homeFooter from './components/home-footer';
+
 Vue.component('l-button', LButton);
+Vue.component('home-footer', homeFooter);
 Vue.config.productionTip = false;
 
 /* eslint-disable no-new */
