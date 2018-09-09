@@ -2,7 +2,7 @@
  * @Author: hzq
  * @Date: 2018-08-28 17:45:25
  * @Last Modified by: hzq
- * @Last Modified time: 2018-09-08 22:50:50
+ * @Last Modified time: 2018-09-09 15:32:33
  * @文件说明: 首页页面
  */
 <template>
@@ -40,7 +40,7 @@
                     </div>
                 </div>
             </div>
-            <home-footer></home-footer>
+            <l-footer></l-footer>
         </div>
     </div>
 </template>

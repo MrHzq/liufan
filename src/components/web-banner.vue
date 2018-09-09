@@ -2,7 +2,7 @@
  * @Author: hzq
  * @Date: 2018-09-08 21:11:11
  * @Last Modified by: hzq
- * @Last Modified time: 2018-09-08 23:04:51
+ * @Last Modified time: 2018-09-09 17:32:08
  * @文件说明: web-banner组件
  */
 <template>

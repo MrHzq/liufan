@@ -2,7 +2,7 @@
  * @Author: hzq
  * @Date: 2018-09-08 16:46:59
  * @Last Modified by: hzq
- * @Last Modified time: 2018-09-08 21:23:03
+ * @Last Modified time: 2018-09-09 14:18:52
  * @文件说明: 侧导航组件
  */
 <template>
@@ -21,9 +21,6 @@
 <script>
     export default {
         name: 'l-side-nav',
-        data() {
-            return {};
-        },
         computed: {
             nav() {
                 let nav = [
@@ -33,19 +30,19 @@
                     },
                     {
                         name: '手机端',
-                        router: 'mobile-xlf'
+                        router: 'mobile-index'
                     },
                     {
                         name: '平面',
-                        router: 'plane-xlf'
+                        router: 'plane-index'
                     },
                     {
                         name: '手绘',
-                        router: 'hand-xlf'
+                        router: 'hand-index'
                     },
                     {
                         name: 'LOGO',
-                        router: 'logo-xlf'
+                        router: 'logo-index'
                     }
                 ];
                 let index = nav.findIndex(({router}) => {
@@ -112,22 +109,22 @@
                     background: linear-gradient(-52deg, #8adedd, #6cf3da);
                 }
             }
-            .mobile-xlf {
+            .mobile-index {
                 .item {
                     background: linear-gradient(-52deg, #87d6ca, #90eccd);
                 }
             }
-            .plane-xlf {
+            .plane-index {
                 .item {
                     background: linear-gradient(-52deg, #e9b3cb, #f6d5dd);
                 }
             }
-            .hand-xlf {
+            .hand-index {
                 .item {
                     background: linear-gradient(-52deg, #a4dfb9, #cdf1da);
                 }
             }
-            .logo-xlf {
+            .logo-index {
                 .item {
                     background: linear-gradient(-52deg, #ecb1bd, #f5d3d8);
                 }

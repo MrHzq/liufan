@@ -2,7 +2,7 @@
  * @Author: hzq
  * @Date: 2018-09-08 12:18:18
  * @Last Modified by: hzq
- * @Last Modified time: 2018-09-08 23:00:08
+ * @Last Modified time: 2018-09-09 15:32:37
  * @文件说明: web-熊来疯展示页面
  */
 <template>
@@ -25,7 +25,7 @@
         <div class="web-gradient"></div>
         <img v-if="xlf" class="xlf-bottom" src="../../assets/web/xlf-bottom.png" alt="">
         <img v-else class="yxy-bottom" src="../../assets/web/yxy-bottom.png" alt="">
-        <home-footer class="home-footer"></home-footer>
+        <l-footer class="l-footer"></l-footer>
     </div>
 </template>
 
@@ -88,7 +88,6 @@
                 }
             }
         }
-
         .web-full-img {
             position: relative;
             z-index: 0;
