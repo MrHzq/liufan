@@ -24,6 +24,7 @@
         <div class="web-gradient"></div>
         <img v-if="xlf" class="xlf-bottom" src="../../assets/web/xlf-bottom.png" alt="">
         <img v-else class="yxy-bottom" src="../../assets/web/yxy-bottom.png" alt="">
+        <l-footer></l-footer>
     </div>
 </template>
 

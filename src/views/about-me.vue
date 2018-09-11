@@ -1,6 +1,7 @@
 <template>
     <div class='about-me'>
         gyw
+        <l-footer></l-footer>
     </div>
 </template>
 

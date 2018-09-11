@@ -2,7 +2,7 @@
  * @Author: hzq
  * @Date: 2018-09-08 12:18:18
  * @Last Modified by: hzq
- * @Last Modified time: 2018-09-11 23:06:26
+ * @Last Modified time: 2018-09-11 23:48:21
  * @文件说明: 手绘-展示页面-默认展示【大鱼海棠】
  */
 <template>
@@ -89,6 +89,7 @@
         </div>
         <img class="btImg1" src="../../assets/hand/bt1.png" alt="">
         <img class="btImg2" src="../../assets/hand/bt2.png" alt="">
+        <l-footer></l-footer>
     </div>
 </template>
 

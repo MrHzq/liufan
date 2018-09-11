@@ -2,7 +2,7 @@
  * @Author: hzq
  * @Date: 2018-08-28 17:45:25
  * @Last Modified by: hzq
- * @Last Modified time: 2018-09-06 21:42:11
+ * @Last Modified time: 2018-09-11 23:47:30
  * @文件说明: 首页-头部组件
  */
 <template>
@@ -35,6 +35,7 @@
     .home-header {
         display: flex;
         justify-content: space-between;
+        margin-top: 153px;
         .left {
             .wel {
                 font-size: 28px;

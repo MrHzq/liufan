@@ -2,7 +2,7 @@
  * @Author: hzq
  * @Date: 2018-09-09 17:29:25
  * @Last Modified by: hzq
- * @Last Modified time: 2018-09-11 23:07:57
+ * @Last Modified time: 2018-09-11 23:48:31
  * @文件说明: 平面展示页面
  */
 <template>
@@ -30,6 +30,7 @@
         <img class="img" src="../../assets/plane/img3.png">
         <img class="img mt" src="../../assets/plane/img4.png">
         <img class="img mb" src="../../assets/plane/img5.png">
+        <l-footer></l-footer>
     </div>
 </template>
 

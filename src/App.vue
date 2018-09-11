@@ -1,9 +1,8 @@
 <template>
-    <div id="app" :style="{'padding-bottom':$route.name==='hand-index'?'0':'0.57rem'}">
-        <keep-alive>
-            <router-view />
-        </keep-alive>
-        <l-footer></l-footer>
+    <div id="app">
+        <!-- <keep-alive> -->
+        <router-view />
+        <!-- </keep-alive> -->
     </div>
 </template>
 

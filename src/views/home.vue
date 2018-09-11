@@ -2,13 +2,13 @@
  * @Author: hzq
  * @Date: 2018-08-28 17:45:25
  * @Last Modified by: hzq
- * @Last Modified time: 2018-09-11 23:07:52
+ * @Last Modified time: 2018-09-11 23:48:38
  * @文件说明: 首页页面
  */
 <template>
     <div class="home">
         <div class="content">
-            <home-header class="home-header"></home-header>
+            <home-header></home-header>
             <div class="five-module">
                 <div class="module">
                     <div class="web m" @click="$router.push('/web-xlf')">
@@ -41,6 +41,7 @@
                 </div>
             </div>
         </div>
+        <l-footer></l-footer>
     </div>
 </template>
 
@@ -61,9 +62,7 @@
         background-image: url('../assets/home/home-bg.png');
         background-position: left bottom;
         background-size: cover;
-        .home-header {
-            margin-top: 153px;
-        }
+        overflow: hidden;
         .content {
             width: 1200px;
             margin: 0 auto;

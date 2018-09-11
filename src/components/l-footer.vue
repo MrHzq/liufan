@@ -2,11 +2,11 @@
  * @Author: hzq
  * @Date: 2018-08-28 17:45:25
  * @Last Modified by: hzq
- * @Last Modified time: 2018-09-11 23:20:27
+ * @Last Modified time: 2018-09-11 23:49:12
  * @文件说明: 首页-尾部组件
  */
 <template>
-    <div class='home-footer'>
+    <div class='home-footer' :style="{'padding-bottom':$route.name==='hand-index'?'0':'0.57rem'}">
         <div class="contact-me" :class="{'hand-me':hand}">
             <div class="me-text">联系我</div>
             <div class="me-line"></div>
