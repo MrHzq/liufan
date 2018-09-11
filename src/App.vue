@@ -1,8 +1,8 @@
 <template>
     <div id="app" :style="{'padding-bottom':$route.name==='hand-index'?'0':'0.57rem'}">
-        <keep-alive>
-            <router-view class="royter-view" />
-        </keep-alive>
+        <!-- <keep-alive> -->
+        <router-view class="royter-view" />
+        <!-- </keep-alive> -->
         <l-footer></l-footer>
     </div>
 </template>
