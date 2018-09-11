@@ -2,7 +2,7 @@
  * @Author: hzq
  * @Date: 2018-09-09 14:06:37
  * @Last Modified by: hzq
- * @Last Modified time: 2018-09-09 17:39:03
+ * @Last Modified time: 2018-09-11 23:07:55
  * @文件说明: 手机端展示页面
  */
 <template>
@@ -78,7 +78,6 @@
             </div>
         </div>
         <img class="bottom-img" src="../../assets/mobile/bottom.png">
-        <l-footer></l-footer>
     </div>
 </template>
 

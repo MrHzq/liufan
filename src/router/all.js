@@ -2,7 +2,7 @@
  * @Author: hzq
  * @Date: 2018-08-28 17:50:19
  * @Last Modified by: hzq
- * @Last Modified time: 2018-09-11 21:25:41
+ * @Last Modified time: 2018-09-11 22:19:25
  * @文件说明: 所有路由处理
  */
 let all = [
@@ -28,6 +28,14 @@ let all = [
     {
         path: 'plane-index',
         src: 'plane/plane-index'
+    },
+    {
+        path: 'hand-index',
+        src: 'hand/hand-index'
+    },
+    {
+        path: 'hand-sm',
+        src: 'hand/hand-index'
     }
 ];
 let routes = all.map(val => {

@@ -2,14 +2,14 @@
  * @Author: hzq
  * @Date: 2018-09-08 12:18:18
  * @Last Modified by: hzq
- * @Last Modified time: 2018-09-09 15:32:37
+ * @Last Modified time: 2018-09-11 23:08:00
  * @文件说明: web-熊来疯展示页面
  */
 <template>
     <div class='web-index'>
         <l-side-nav></l-side-nav>
-        <web-banner>
-            <web-tab></web-tab>
+        <web-banner :text="text" :info="info">
+            <l-tab :tab="tab"></l-tab>
         </web-banner>
         <div class="web-introduce" :class="$route.name">
             <img v-if="xlf" class="introduce-img" src="../../assets/web/xlf-introduce.png" alt="">
@@ -18,27 +18,52 @@
                 <div class="introduce-title">{{introduce.title}}</div>
                 <div class="introduce-text" v-html="introduce.info"></div>
             </div>
-
         </div>
         <img v-if="xlf" class="web-full-img" src="../../assets/web/xlf-full.png" alt="">
         <img v-else class="web-full-img" src="../../assets/web/yxy-full.png" alt="">
         <div class="web-gradient"></div>
         <img v-if="xlf" class="xlf-bottom" src="../../assets/web/xlf-bottom.png" alt="">
         <img v-else class="yxy-bottom" src="../../assets/web/yxy-bottom.png" alt="">
-        <l-footer class="l-footer"></l-footer>
     </div>
 </template>
 
 <script>
-    import webTab from '../../components/web-tab';
     import webBanner from '../../components/web-banner';
     export default {
         name: 'web-index',
-        components: {webTab, webBanner},
+        components: { webBanner },
         data() {
-            return {};
+            return {
+                tab: [
+                    {
+                        name: '熊来疯设计大赛官网',
+                        router: 'web-xlf'
+                    },
+                    {
+                        name: '云玺印官网',
+                        router: 'web-yxy'
+                    }
+                ]
+            };
         },
         computed: {
+            text() {
+                let text = {
+                    'web-xlf': '熊来疯设计大赛官网',
+                    'web-yxy': '云玺印官网'
+                };
+                return text[this.$route.name];
+            },
+            info() {
+                let info = {
+                    'web-xlf':
+                        '熊来疯设计大赛报名官网，设计围绕熊来疯主题进行设计，风格不限。由于需求比较抽象化，整个官网由名称“熊来疯”展开设计。',
+                    'web-yxy':
+                        '为公司软件产品设计的官网，与公司官网有一定的区别，云玺印是一个专为快印行业打造的SaaS系统，其设计风格就围绕着科技和办公来设计的。'
+                };
+
+                return info[this.$route.name];
+            },
             introduce() {
                 let yxy = {
                     title: '云玺印',

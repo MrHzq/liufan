@@ -2,7 +2,7 @@
  * @Author: hzq
  * @Date: 2018-08-28 17:45:25
  * @Last Modified by: hzq
- * @Last Modified time: 2018-09-09 15:32:33
+ * @Last Modified time: 2018-09-11 23:07:52
  * @文件说明: 首页页面
  */
 <template>
@@ -40,7 +40,6 @@
                     </div>
                 </div>
             </div>
-            <l-footer></l-footer>
         </div>
     </div>
 </template>
@@ -49,7 +48,7 @@
     import homeHeader from '../components/home-header';
     export default {
         name: 'home',
-        components: {homeHeader},
+        components: { homeHeader },
         data() {
             return {};
         },

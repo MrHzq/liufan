@@ -2,11 +2,11 @@
  * @Author: hzq
  * @Date: 2018-09-08 21:11:11
  * @Last Modified by: hzq
- * @Last Modified time: 2018-09-09 17:32:08
+ * @Last Modified time: 2018-09-11 22:25:59
  * @文件说明: web-banner组件
  */
 <template>
-    <div class='web-banner'>
+    <div class='web-banner' :style="{'background-color':bg}">
         <slot></slot>
         <div class="banner-content">
             <div class="banner-title">Web</div>
@@ -29,27 +29,20 @@
         data() {
             return {};
         },
-        computed: {
-            text() {
-                let text = {
-                    'web-xlf': '熊来疯设计大赛官网',
-                    'web-yxy': '云玺印官网'
-                };
-
-                return text[this.$route.name];
+        props: {
+            text: {
+                type: String,
+                default: ''
             },
-            info() {
-                let info = {
-                    'web-xlf':
-                        '熊来疯设计大赛报名官网，设计围绕熊来疯主题进行设计，风格不限。由于需求比较抽象化，整个官网由名称“熊来疯”展开设计。',
-                    'web-yxy':
-                        '为公司软件产品设计的官网，与公司官网有一定的区别，云玺印是一个专为快印行业打造的SaaS系统，其设计风格就围绕着科技和办公来设计的。'
-                };
-
-                return info[this.$route.name];
+            info: {
+                type: String,
+                default: ''
+            },
+            bg: {
+                type: String,
+                default: '#aac2de'
             }
-        },
-        methods: {}
+        }
     };
 </script>
 
@@ -59,7 +52,6 @@
         width: 1006px;
         height: 592px;
         margin-left: 554px;
-        background-color: #aac2de;
         .banner-content {
             margin-right: 58px;
             text-align: right;

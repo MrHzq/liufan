@@ -2,16 +2,16 @@
  * @Author: hzq
  * @Date: 2018-08-28 17:45:25
  * @Last Modified by: hzq
- * @Last Modified time: 2018-09-09 17:24:33
+ * @Last Modified time: 2018-09-11 23:20:27
  * @文件说明: 首页-尾部组件
  */
 <template>
     <div class='home-footer'>
-        <div class="contact-me">
+        <div class="contact-me" :class="{'hand-me':hand}">
             <div class="me-text">联系我</div>
             <div class="me-line"></div>
         </div>
-        <div class="contact-way">
+        <div class="contact-way" :class="{'hand-way':hand}">
             <ul class="left">
                 <li class="left-li">电话：15283819858</li>
                 <li class="left-li">QQ：627317307</li>
@@ -21,11 +21,11 @@
                 <l-button width="1.66666rem" v-if="$route.name==='home'">我的简历</l-button>
                 <div v-else class="to-top" @click="toTop">
                     <img class="img" src="../assets/commom/to-top.png" alt="">
-                    <div class="text">回到顶部</div>
+                    <div class="text" :class="{'hand-text':hand}">回到顶部</div>
                 </div>
             </div>
         </div>
-        <div class="footer-tips">
+        <div class="footer-tips" :class="{'hand-tips':hand}">
             <span>如果刘帆的作品站没有带给你一个好心情，请通过上面的联系方式进行投诉哦</span>
             <img class="smile" src="../assets/commom/smile.png" alt="">
         </div>
@@ -58,6 +58,11 @@
                         document.documentElement.scrollTop;
                 }, 50);
             }
+        },
+        computed: {
+            hand() {
+                return this.$route.name === 'hand-index';
+            }
         }
     };
 </script>
@@ -67,7 +72,6 @@
         position: relative;
         width: 1200px;
         margin: 0 auto;
-        padding-bottom: 110px;
         .contact-me {
             position: absolute;
             top: -23px;
@@ -89,6 +93,15 @@
                 background-color: #22ddbb;
             }
         }
+        .hand-me {
+            background-color: transparent;
+            .me-text {
+                color: #fff;
+            }
+            .me-line {
+                background-color: #fff;
+            }
+        }
         .contact-way {
             display: flex;
             align-items: center;
@@ -96,13 +109,12 @@
             height: 240px;
             border: 2px solid #cccccc;
             border-radius: 10px;
+            color: #333;
             .left {
                 margin-right: 130px;
                 .left-li {
                     margin-bottom: 20px;
                     font-size: 24px;
-                    color: #333;
-
                     &:nth-child(2) {
                         margin-left: 70px;
                     }
@@ -131,8 +143,15 @@
                         color: #22ddbb;
                         letter-spacing: 3px;
                     }
+                    .hand-text {
+                        color: #fff;
+                    }
                 }
             }
+        }
+        .hand-way {
+            color: #fff;
+            border: 2px solid #fff;
         }
         .footer-tips {
             display: flex;
@@ -145,6 +164,9 @@
                 width: 51px;
                 margin-left: 10px;
             }
+        }
+        .hand-tips {
+            color: #ccc;
         }
     }
 </style>

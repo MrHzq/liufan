@@ -2,7 +2,7 @@
  * @Author: hzq
  * @Date: 2018-09-08 16:46:59
  * @Last Modified by: hzq
- * @Last Modified time: 2018-09-09 14:18:52
+ * @Last Modified time: 2018-09-11 22:19:00
  * @文件说明: 侧导航组件
  */
 <template>
@@ -45,7 +45,7 @@
                         router: 'logo-index'
                     }
                 ];
-                let index = nav.findIndex(({router}) => {
+                let index = nav.findIndex(({ router }) => {
                     return this.$route.name.indexOf(router.split('-')[0]) !== -1;
                 });
                 nav.splice(index, 1);
