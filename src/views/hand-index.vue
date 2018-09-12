@@ -2,7 +2,7 @@
  * @Author: hzq
  * @Date: 2018-09-08 12:18:18
  * @Last Modified by: hzq
- * @Last Modified time: 2018-09-11 23:48:21
+ * @Last Modified time: 2018-09-12 12:35:39
  * @文件说明: 手绘-展示页面-默认展示【大鱼海棠】
  */
 <template>
@@ -21,19 +21,19 @@
                     </div>
                 </div>
             </div>
-            <img class="banner-img" src="../../assets/hand/banner.png">
+            <img class="banner-img" src="../assets/hand/banner.png">
         </l-banner>
         <div class="bgImg">
-            <img class="img" src="../../assets/hand/bg1.png">
-            <img class="img" src="../../assets/hand/bg2.png">
-            <img class="img" src="../../assets/hand/bg3.png">
-            <img class="img" src="../../assets/hand/bg4.png">
-            <img class="img" src="../../assets/hand/bg5.png">
-            <img class="img" src="../../assets/hand/bg6.png">
-            <img class="img" src="../../assets/hand/bg7.png">
-            <img class="img" src="../../assets/hand/bg8.png">
-            <img class="img" src="../../assets/hand/bg9.png">
-            <img class="img" src="../../assets/hand/bg10.png">
+            <img class="img" src="../assets/hand/bg1.png">
+            <img class="img" src="../assets/hand/bg2.png">
+            <img class="img" src="../assets/hand/bg3.png">
+            <img class="img" src="../assets/hand/bg4.png">
+            <img class="img" src="../assets/hand/bg5.png">
+            <img class="img" src="../assets/hand/bg6.png">
+            <img class="img" src="../assets/hand/bg7.png">
+            <img class="img" src="../assets/hand/bg8.png">
+            <img class="img" src="../assets/hand/bg9.png">
+            <img class="img" src="../assets/hand/bg10.png">
         </div>
         <div class="introduce">
             <div class="title">大鱼海棠</div>
@@ -41,43 +41,43 @@
                 北冥有鱼，其名为鲲，鲲之大，不知其几千里也。<br>化而为鸟，其名为鹏。鹏之背，不知其几千里也；<br>怒而飞，其翼若垂天之云。
             </div>
             <div class="iconImg">
-                <img class="img" src="../../assets/hand/icon1.png">
+                <img class="img" src="../assets/hand/icon1.png">
                 <div class="textDiv">
                     <span class="textSpan">电话</span>
                     <span class="textSpan">电子书</span>
                     <span class="textSpan">计算器</span>
                 </div>
-                <img class="img" src="../../assets/hand/icon2.png">
+                <img class="img" src="../assets/hand/icon2.png">
                 <div class="textDiv">
                     <span class="textSpan">联系人</span>
                     <span class="textSpan">浏览器</span>
                     <span class="textSpan">录音机</span>
                 </div>
-                <img class="img" src="../../assets/hand/icon3.png">
+                <img class="img" src="../assets/hand/icon3.png">
                 <div class="textDiv">
                     <span class="textSpan">日历</span>
                     <span class="textSpan">设置</span>
                     <span class="textSpan">时钟</span>
                 </div>
-                <img class="img" src="../../assets/hand/icon4.png">
+                <img class="img" src="../assets/hand/icon4.png">
                 <div class="textDiv">
                     <span class="textSpan">收音机</span>
                     <span class="textSpan">手电筒</span>
                     <span class="textSpan">天气</span>
                 </div>
-                <img class="img" src="../../assets/hand/icon5.png">
+                <img class="img" src="../assets/hand/icon5.png">
                 <div class="textDiv">
                     <span class="textSpan">便签</span>
                     <span class="textSpan">相册</span>
                     <span class="textSpan">信息</span>
                 </div>
-                <img class="img" src="../../assets/hand/icon6.png">
+                <img class="img" src="../assets/hand/icon6.png">
                 <div class="textDiv">
                     <span class="textSpan">音乐</span>
                     <span class="textSpan">应用商店</span>
                     <span class="textSpan">邮箱</span>
                 </div>
-                <img class="img last" src="../../assets/hand/icon7.png">
+                <img class="img last" src="../assets/hand/icon7.png">
                 <div class="textDiv">
                     <span class="textSpan">指南针</span>
                     <span class="textSpan">主题</span>
@@ -87,8 +87,8 @@
         <div class="info2">
             人生是一场旅程。我们经历了几次轮回，才换来这个旅程。<br>而这个旅程很短，因此不妨大胆一些，不妨大胆一些去爱一个人，去攀一座山，去追一个梦……<br>有很多事我都不明白。但我相信一件事。上天让我们来到这个世上，就是为了让我们创造奇迹。
         </div>
-        <img class="btImg1" src="../../assets/hand/bt1.png" alt="">
-        <img class="btImg2" src="../../assets/hand/bt2.png" alt="">
+        <img class="btImg1" src="../assets/hand/bt1.png" alt="">
+        <img class="btImg2" src="../assets/hand/bt2.png" alt="">
         <l-footer></l-footer>
     </div>
 </template>

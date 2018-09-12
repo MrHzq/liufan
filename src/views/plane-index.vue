@@ -23,13 +23,13 @@
                     </div>
                 </div>
             </div>
-            <img class="banner-img" src="../../assets/plane/banner.png">
+            <img class="banner-img" src="../assets/plane/banner.png">
         </l-banner>
-        <img class="img" src="../../assets/plane/img1.png">
-        <img class="img" src="../../assets/plane/img2.png">
-        <img class="img" src="../../assets/plane/img3.png">
-        <img class="img mt" src="../../assets/plane/img4.png">
-        <img class="img mb" src="../../assets/plane/img5.png">
+        <img class="img" src="../assets/plane/img1.png">
+        <img class="img" src="../assets/plane/img2.png">
+        <img class="img" src="../assets/plane/img3.png">
+        <img class="img mt" src="../assets/plane/img4.png">
+        <img class="img mb" src="../assets/plane/img5.png">
         <l-footer></l-footer>
     </div>
 </template>

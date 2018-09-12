@@ -21,9 +21,9 @@
                     </div>
                 </div>
             </div>
-            <img class="banner-img" src="../../assets/mobile/banner.png"></l-banner>
+            <img class="banner-img" src="../assets/mobile/banner.png"></l-banner>
         <div class="logo">
-            <img class="logo-img" src="../../assets/mobile/logo.png">
+            <img class="logo-img" src="../assets/mobile/logo.png">
             <div class="logo-info">
                 <div class="item-title">知音LOGO</div>
                 <div class="item-text">运用布尔运算绘制，简化字体，遵循LOGO<br>易辨性原则和特殊以及唯一性设计
@@ -31,7 +31,7 @@
             </div>
         </div>
         <div class="classify">
-            <img class="classify-img" src="../../assets/mobile/classify.png">
+            <img class="classify-img" src="../assets/mobile/classify.png">
             <div class="classify-info">
                 <div class="item-title">推荐分类</div>
                 <div class="item-text">不错过任何经典作品；每日新鲜内容按时更新；<br>还有更多免费书籍等你来阅读
@@ -40,7 +40,7 @@
             </div>
         </div>
         <div class="recommend">
-            <img class="recommend-img" src="../../assets/mobile/recommend.png">
+            <img class="recommend-img" src="../assets/mobile/recommend.png">
             <div class="recommend-info">
                 <div class="item-line"></div>
                 <div class="item-title">智能推荐</div>
@@ -49,7 +49,7 @@
             </div>
         </div>
         <div class="bookshelf">
-            <img class="bookshelf-img" src="../../assets/mobile/bookshelf.png">
+            <img class="bookshelf-img" src="../assets/mobile/bookshelf.png">
             <div class="bookshelf-info">
                 <div class="item-title">书架内容
                     <div class="item-line"></div>
@@ -59,7 +59,7 @@
             </div>
         </div>
         <div class="playback">
-            <img class="playback-img" src="../../assets/mobile/playback.png">
+            <img class="playback-img" src="../assets/mobile/playback.png">
             <div class="playback-info">
                 <div class="item-title">播放栏</div>
                 <div class="item-line"></div>
@@ -68,7 +68,7 @@
             </div>
         </div>
         <div class="app">
-            <img class="app-img" src="../../assets/mobile/app.png">
+            <img class="app-img" src="../assets/mobile/app.png">
             <div class="app-info">
                 <div class="item-title">知音App
                     <div class="item-line"></div>
@@ -77,7 +77,7 @@
                 </div>
             </div>
         </div>
-        <img class="bottom-img" src="../../assets/mobile/bottom.png">
+        <img class="bottom-img" src="../assets/mobile/bottom.png">
         <l-footer></l-footer>
     </div>
 </template>
