@@ -2,12 +2,12 @@
  * @Author: hzq
  * @Date: 2018-08-28 17:45:25
  * @Last Modified by: hzq
- * @Last Modified time: 2018-09-11 23:49:12
+ * @Last Modified time: 2018-09-13 00:13:31
  * @文件说明: 首页-尾部组件
  */
 <template>
     <div class='home-footer' :style="{'padding-bottom':$route.name==='hand-index'?'0':'0.57rem'}">
-        <div class="contact-me" :class="{'hand-me':hand}">
+        <div class="contact-me" :class="{'hand-me':hand}" :style="{background:color}">
             <div class="me-text">联系我</div>
             <div class="me-line"></div>
         </div>
@@ -19,15 +19,17 @@
             </ul>
             <div class="right">
                 <l-button width="1.66666rem" v-if="$route.name==='home'">我的简历</l-button>
-                <div v-else class="to-top" @click="toTop">
-                    <img class="img" src="../assets/commom/to-top.png" alt="">
+                <div v-else class="to-top" @click="toTop(10)">
+                    <img v-if="hand" class="img" src="../assets/commom/to-top2.png">
+                    <img v-else class="img" src="../assets/commom/to-top.png">
                     <div class="text" :class="{'hand-text':hand}">回到顶部</div>
                 </div>
             </div>
         </div>
         <div class="footer-tips" :class="{'hand-tips':hand}">
             <span>如果刘帆的作品站没有带给你一个好心情，请通过上面的联系方式进行投诉哦</span>
-            <img class="smile" src="../assets/commom/smile.png" alt="">
+            <img v-if="hand" class="smile" src="../assets/commom/smile2.png">
+            <img v-else class="smile" src="../assets/commom/smile.png">
         </div>
     </div>
 </template>
@@ -35,15 +37,29 @@
 <script>
     export default {
         name: 'home-footer',
+        props: {
+            color: {
+                type: String,
+                default: ''
+            }
+        },
+        computed: {
+            hand() {
+                return this.$route.name === 'hand-index';
+            }
+        },
+        deactivated() {
+            this.toTop(1);
+        },
         methods: {
-            toTop() {
+            toTop(rate = 10) {
                 let top1 = 0;
                 let top2 = 0;
                 let scrollToptimer = setInterval(() => {
                     top1 =
                         document.body.scrollTop ||
                         document.documentElement.scrollTop;
-                    let speed = top1 / 10;
+                    let speed = top1 / rate;
                     if (document.body.scrollTop != 0) {
                         document.body.scrollTop -= speed;
                     } else {
@@ -57,11 +73,6 @@
                         document.body.scrollTop ||
                         document.documentElement.scrollTop;
                 }, 50);
-            }
-        },
-        computed: {
-            hand() {
-                return this.$route.name === 'hand-index';
             }
         }
     };
@@ -94,7 +105,7 @@
             }
         }
         .hand-me {
-            background-color: transparent;
+            background-color: #01242a;
             .me-text {
                 color: #fff;
             }

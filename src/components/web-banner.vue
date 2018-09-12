@@ -18,8 +18,8 @@
                 <div class="info">{{info}}</div>
             </div>
         </div>
-        <img v-if="$route.name==='web-xlf'" class="xlf-banner" src="../assets/web/xlf-banner.png" alt="">
-        <img v-else class="yxy-banner" src="../assets/web/yxy-banner.png" alt="">
+        <img v-if="$route.name==='web-xlf'" class="xlf-banner" src="../assets/web/xlf-banner.png">
+        <img v-else class="yxy-banner" src="../assets/web/yxy-banner.png">
     </div>
 </template>
 

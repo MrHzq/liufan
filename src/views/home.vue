@@ -2,7 +2,7 @@
  * @Author: hzq
  * @Date: 2018-08-28 17:45:25
  * @Last Modified by: hzq
- * @Last Modified time: 2018-09-11 23:48:38
+ * @Last Modified time: 2018-09-12 22:30:14
  * @文件说明: 首页页面
  */
 <template>
@@ -33,7 +33,7 @@
                         <div class="line"></div>
                         <img src="../assets/home/m-hand.png" class="img">
                     </div>
-                    <div class="logo m" @click="$router.push('/logo-index')">
+                    <div class="logo m" @click="$router.push('/logo-csg')">
                         <div class="title">LOGO</div>
                         <div class="line"></div>
                         <img src="../assets/home/m-logo.png" class="img">

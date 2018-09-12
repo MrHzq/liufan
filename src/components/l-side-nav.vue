@@ -2,7 +2,7 @@
  * @Author: hzq
  * @Date: 2018-09-08 16:46:59
  * @Last Modified by: hzq
- * @Last Modified time: 2018-09-11 22:19:00
+ * @Last Modified time: 2018-09-12 22:30:23
  * @文件说明: 侧导航组件
  */
 <template>
@@ -11,7 +11,7 @@
         <ul class="nav-ul">
             <router-link v-for="(i,index) in nav" :key="i.router" :to="i.router" tag="li" class="nav-li" :class="i.router">
                 <div class="item" :style="{top:index*52/192+'rem'}"></div>
-                <div class="name">{{i.name}}</div>
+                <div class="name" :class="{'hand-name':$route.name==='hand-index'}">{{i.name}}</div>
             </router-link>
         </ul>
         <div class="nav-line"></div>
@@ -42,7 +42,7 @@
                     },
                     {
                         name: 'LOGO',
-                        router: 'logo-index'
+                        router: 'logo-csg'
                     }
                 ];
                 let index = nav.findIndex(({ router }) => {
@@ -79,6 +79,9 @@
                     .name {
                         display: block;
                         opacity: 1;
+                    }
+                    .hand-name {
+                        color: #fff;
                     }
                 }
                 .item {
@@ -124,7 +127,7 @@
                     background: linear-gradient(-52deg, #a4dfb9, #cdf1da);
                 }
             }
-            .logo-index {
+            .logo-csg {
                 .item {
                     background: linear-gradient(-52deg, #ecb1bd, #f5d3d8);
                 }

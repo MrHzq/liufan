@@ -2,8 +2,8 @@
  * @Author: hzq
  * @Date: 2018-09-08 12:18:18
  * @Last Modified by: hzq
- * @Last Modified time: 2018-09-12 12:36:02
- * @文件说明: web-熊来疯展示页面
+ * @Last Modified time: 2018-09-12 22:54:26
+ * @文件说明:  web-展示页面 （熊来疯||云玺印）
  */
 <template>
     <div class='web-index'>
@@ -12,18 +12,18 @@
             <l-tab :tab="tab"></l-tab>
         </web-banner>
         <div class="web-introduce" :class="$route.name">
-            <img v-if="xlf" class="introduce-img" src="../assets/web/xlf-introduce.png" alt="">
-            <img v-else class="introduce-img" src="../assets/web/yxy-introduce.png" alt="">
+            <img v-if="xlf" class="introduce-img" src="../assets/web/xlf-introduce.png">
+            <img v-else class="introduce-img" src="../assets/web/yxy-introduce.png">
             <div class="introduce-info">
                 <div class="introduce-title">{{introduce.title}}</div>
                 <div class="introduce-text" v-html="introduce.info"></div>
             </div>
         </div>
-        <img v-if="xlf" class="web-full-img" src="../assets/web/xlf-full.png" alt="">
-        <img v-else class="web-full-img" src="../assets/web/yxy-full.png" alt="">
+        <img v-if="xlf" class="web-full-img" src="../assets/web/xlf-full.png">
+        <img v-else class="web-full-img" src="../assets/web/yxy-full.png">
         <div class="web-gradient"></div>
-        <img v-if="xlf" class="xlf-bottom" src="../assets/web/xlf-bottom.png" alt="">
-        <img v-else class="yxy-bottom" src="../assets/web/yxy-bottom.png" alt="">
+        <img v-if="xlf" class="xlf-bottom" src="../assets/web/xlf-bottom.png">
+        <img v-else class="yxy-bottom" src="../assets/web/yxy-bottom.png">
         <l-footer></l-footer>
     </div>
 </template>

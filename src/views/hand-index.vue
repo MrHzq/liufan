@@ -2,7 +2,7 @@
  * @Author: hzq
  * @Date: 2018-09-08 12:18:18
  * @Last Modified by: hzq
- * @Last Modified time: 2018-09-12 12:35:39
+ * @Last Modified time: 2018-09-13 00:09:46
  * @文件说明: 手绘-展示页面-默认展示【大鱼海棠】
  */
 <template>
@@ -17,7 +17,7 @@
                 </div>
                 <div class="banner-info">
                     <div class="info">
-                        设计色调以科技蓝为主，以产品介绍、产品优势、产品价值<br>并为之感兴趣从而达到宣传效<br>果，设计风。对个人的设计，人、景相结合表现手法
+                        所有活着的人类，都是海里的一条巨大的鱼；<br>出生的时候他们从海的此岸出发······<br>他们的生命就像横越大海，有时相遇，有时分开······<br>死的时候，他们便到了岸，各去各的世界。
                     </div>
                 </div>
             </div>
@@ -87,8 +87,8 @@
         <div class="info2">
             人生是一场旅程。我们经历了几次轮回，才换来这个旅程。<br>而这个旅程很短，因此不妨大胆一些，不妨大胆一些去爱一个人，去攀一座山，去追一个梦……<br>有很多事我都不明白。但我相信一件事。上天让我们来到这个世上，就是为了让我们创造奇迹。
         </div>
-        <img class="btImg1" src="../assets/hand/bt1.png" alt="">
-        <img class="btImg2" src="../assets/hand/bt2.png" alt="">
+        <img class="btImg1" src="../assets/hand/bt1.png">
+        <img class="btImg2" src="../assets/hand/bt2.png">
         <l-footer></l-footer>
     </div>
 </template>
@@ -194,7 +194,7 @@
             }
         }
         .info2 {
-            margin: 410px auto 130px;
+            margin: 330px auto 130px;
             text-align: center;
             color: #fefefe;
             font-size: 24px;

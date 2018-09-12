@@ -2,37 +2,43 @@
  * @Author: hzq
  * @Date: 2018-08-28 17:45:25
  * @Last Modified by: hzq
- * @Last Modified time: 2018-09-11 23:47:30
+ * @Last Modified time: 2018-09-13 00:08:16
  * @文件说明: 首页-头部组件
  */
 <template>
     <div class='home-header'>
-        <div class="left">
+        <div class="left" @click="$router.push('/home')">
             <p class="wel">welcome to</p>
-            <img class="title-name" src="../assets/home/title-name.png" alt="">
+            <img class="title-name" src="../assets/home/title-name.png">
             <div class="ui">
                 <span class="duty">ui - designer</span>
                 <span class="line"></span>
             </div>
         </div>
-        <div class="right">
+
+        <img class="close" v-if="about" src="../assets/commom/close.png" @click="$router.push('/home')">
+        <div v-else class="right">
             <l-button router="/about-me">关于我</l-button>
         </div>
+
     </div>
 </template>
 
 <script>
     export default {
         name: 'home-header',
-        data() {
-            return {};
-        },
-        methods: {}
+        props: {
+            about: {
+                type: Boolean,
+                default: false
+            }
+        }
     };
 </script>
 
 <style lang='less' scoped>
     .home-header {
+        position: relative;
         display: flex;
         justify-content: space-between;
         margin-top: 153px;
@@ -60,6 +66,18 @@
                     margin-left: 23px;
                     background-color: #22ddbb;
                 }
+            }
+        }
+        .close {
+            position: absolute;
+            top: 100px;
+            right: 0;
+            width: 88px;
+            height: 88px;
+            cursor: pointer;
+            transition: all 0.15s linear;
+            &:hover {
+                transform: scale(1.1, 1.1);
             }
         }
         .right {
