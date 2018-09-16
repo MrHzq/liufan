@@ -282,7 +282,8 @@
             color: #666666;
             .line {
                 width: 50px;
-                border: 1px solid currentColor;
+                height: 1px;
+                background-color: currentColor;
             }
             .text {
                 margin: 0 28px;
