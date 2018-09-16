@@ -282,7 +282,7 @@
             color: #666666;
             .line {
                 width: 50px;
-                height: 2px;
+                height: 2Px;
                 background-color: currentColor;
             }
             .text {
