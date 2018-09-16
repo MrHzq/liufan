@@ -251,6 +251,7 @@
                     margin: 80px auto 40px;
                     .line {
                         width: 50px;
+                        background-color: currentColor;
                         border: 2px solid currentColor;
                     }
                     .text {
