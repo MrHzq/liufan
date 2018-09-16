@@ -49,11 +49,7 @@
     import homeHeader from '../components/home-header';
     export default {
         name: 'home',
-        components: { homeHeader },
-        data() {
-            return {};
-        },
-        methods: {}
+        components: { homeHeader }
     };
 </script>
 
@@ -80,18 +76,30 @@
                             font-size: 56px;
                             color: #ffffff;
                             font-weight: bold;
+                            transition: all 0.4s linear;
                         }
                         .line {
                             position: absolute;
                             width: 40px;
                             height: 4px;
                             background-color: #fff;
+                            transition: all 0.4s linear;
+                        }
+                        .img {
+                            transition: all 0.4s linear;
                         }
                         &:hover {
                             cursor: pointer;
+                            .title {
+                                font-size: 44px;
+                                transform: translateX(-20px);
+                            }
+                            .line {
+                                transform: translateX(-25px);
+                            }
                             .img {
                                 opacity: 1;
-                                transition: all 0.5s linear;
+                                transform: translateX(-30px);
                             }
                         }
                     }
@@ -102,6 +110,11 @@
                         background: linear-gradient(-52deg, #8adedd, #6cf3da);
                         border-radius: 10px;
                         box-shadow: 4px 0px 20px rgba(10, 198, 164, 0.2);
+                        &:hover {
+                            .title {
+                                font-size: 48px;
+                            }
+                        }
                         .title {
                             top: 120px;
                             left: 90px;
@@ -110,11 +123,10 @@
                             top: 103px;
                             left: 249px;
                         }
-
                         .img {
                             opacity: 0;
                             position: absolute;
-                            left: 252px;
+                            left: 262px;
                             top: -29px;
                             width: 353px;
                             height: 374px;
@@ -140,7 +152,7 @@
                         .img {
                             opacity: 0;
                             position: absolute;
-                            left: 148px;
+                            left: 158px;
                             top: 86px;
                             width: 372px;
                             height: 234px;
@@ -166,7 +178,7 @@
                         .img {
                             opacity: 0;
                             position: absolute;
-                            left: 198px;
+                            left: 208px;
                             top: 62px;
                             width: 280px;
                             height: 294px;
@@ -179,6 +191,11 @@
                         background: linear-gradient(-52deg, #a4dfb9, #cdf1da);
                         border-radius: 10px;
                         box-shadow: 4px 0px 20px rgba(10, 198, 164, 0.2);
+                        &:hover {
+                            .line {
+                                transform: translateX(-40px);
+                            }
+                        }
                         .title {
                             top: 75px;
                             left: 64px;
@@ -191,7 +208,7 @@
                         .img {
                             opacity: 0;
                             position: absolute;
-                            left: 182px;
+                            left: 222px;
                             top: 67px;
                             width: 294px;
                             height: 234px;
@@ -204,6 +221,11 @@
                         background: linear-gradient(-52deg, #ecb1bd, #f5d3d8);
                         border-radius: 10px;
                         box-shadow: 4px 0px 20px rgba(10, 198, 164, 0.2);
+                        &:hover {
+                            .title {
+                                font-size: 48px;
+                            }
+                        }
                         .title {
                             top: 28px;
                             left: 56px;
@@ -218,7 +240,7 @@
                         .img {
                             opacity: 0;
                             position: absolute;
-                            left: 103px;
+                            left: 113px;
                             top: -38px;
                             width: 148px;
                             height: 336px;

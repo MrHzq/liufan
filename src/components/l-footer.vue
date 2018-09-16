@@ -2,7 +2,7 @@
  * @Author: hzq
  * @Date: 2018-08-28 17:45:25
  * @Last Modified by: hzq
- * @Last Modified time: 2018-09-13 00:13:31
+ * @Last Modified time: 2018-09-16 15:51:55
  * @文件说明: 首页-尾部组件
  */
 <template>
@@ -14,11 +14,14 @@
         <div class="contact-way" :class="{'hand-way':hand}">
             <ul class="left">
                 <li class="left-li">电话：15283819858</li>
-                <li class="left-li">QQ：627317307</li>
-                <li class="left-li">邮箱：liufan94@163.com</li>
+                <li class="left-li">
+                    <span>微信：627317307</span>
+                    <img class="weixin" src="../assets/commom/weixin.jpg" alt="">
+                </li>
+                <li @click="copy" class="left-li email" data-clipboard-text='liufan94@163.com' title="点击复制邮箱">邮箱：liufan94@163.com</li>
             </ul>
             <div class="right">
-                <l-button width="1.66666rem" v-if="$route.name==='home'">我的简历</l-button>
+                <l-button width="1.66666rem" v-if="$route.name==='home'||$route.name==='about-me'" @click.native="goto">我的简历</l-button>
                 <div v-else class="to-top" @click="toTop(10)">
                     <img v-if="hand" class="img" src="../assets/commom/to-top2.png">
                     <img v-else class="img" src="../assets/commom/to-top.png">
@@ -31,10 +34,12 @@
             <img v-if="hand" class="smile" src="../assets/commom/smile2.png">
             <img v-else class="smile" src="../assets/commom/smile.png">
         </div>
+        <div class="copy-tips" v-if="showCopy">{{showCopy}}</div>
     </div>
 </template>
 
 <script>
+    import Clipboard from 'clipboard';
     export default {
         name: 'home-footer',
         props: {
@@ -42,6 +47,11 @@
                 type: String,
                 default: ''
             }
+        },
+        data() {
+            return {
+                showCopy: ''
+            };
         },
         computed: {
             hand() {
@@ -73,6 +83,31 @@
                         document.body.scrollTop ||
                         document.documentElement.scrollTop;
                 }, 50);
+            },
+            goto() {
+                let href = location.href;
+                href = href.replace('about-me', 'resume');
+                window.open(href);
+            },
+            copy() {
+                var clipboard = new Clipboard('.email');
+                clipboard.on('success', e => {
+                    this.showCopy = '复制成功';
+                    // 释放内存
+                    clipboard.destroy();
+                    setTimeout(() => {
+                        this.showCopy = '';
+                    }, 1000);
+                });
+                clipboard.on('error', e => {
+                    // 不支持复制
+                    this.showCopy = '该浏览器不支持自动复制';
+                    // 释放内存
+                    clipboard.destroy();
+                    setTimeout(() => {
+                        this.showCopy = '';
+                    }, 1000);
+                });
             }
         }
     };
@@ -124,14 +159,31 @@
             .left {
                 margin-right: 130px;
                 .left-li {
+                    position: relative;
                     margin-bottom: 20px;
                     font-size: 24px;
                     &:nth-child(2) {
                         margin-left: 70px;
+                        &:hover {
+                            cursor: pointer;
+                            .weixin {
+                                display: block;
+                            }
+                        }
+                        .weixin {
+                            display: none;
+                            position: absolute;
+                            top: -210px;
+                            left: 0;
+                            width: 200px;
+                            height: 200px;
+                            box-shadow: 0 0 10px #ccc;
+                        }
                     }
                     &:last-child {
                         margin-left: 140px;
                         margin-bottom: 0;
+                        cursor: pointer;
                     }
                 }
             }
@@ -178,6 +230,23 @@
         }
         .hand-tips {
             color: #ccc;
+        }
+        .copy-tips {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 100px;
+            height: 30px;
+            margin: auto;
+            font-size: 24px;
+            pointer-events: all;
+            padding: 16px 48px;
+            border-radius: 4px;
+            color: #22ddbb;
+            box-shadow: 0 0 1px 3px #22ddbb;
+            background: #fff;
         }
     }
 </style>

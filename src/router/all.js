@@ -2,7 +2,7 @@
  * @Author: hzq
  * @Date: 2018-08-28 17:50:19
  * @Last Modified by: hzq
- * @Last Modified time: 2018-09-12 22:29:59
+ * @Last Modified time: 2018-09-15 17:04:44
  * @文件说明: 所有路由处理
  */
 let all = [
@@ -37,6 +37,9 @@ let all = [
     {
         path: 'logo-yxy',
         src: 'logo-index'
+    },
+    {
+        path: 'resume'
     }
 ];
 let routes = all.map(val => {
