@@ -2,7 +2,7 @@
  * @Author: hzq
  * @Date: 2018-08-28 17:45:25
  * @Last Modified by: hzq
- * @Last Modified time: 2018-09-16 15:51:55
+ * @Last Modified time: 2018-09-16 15:59:49
  * @文件说明: 首页-尾部组件
  */
 <template>
@@ -85,8 +85,7 @@
                 }, 50);
             },
             goto() {
-                let href = location.href;
-                href = href.replace('about-me', 'resume');
+                let href = location.origin + location.pathname + '#/resume';
                 window.open(href);
             },
             copy() {
