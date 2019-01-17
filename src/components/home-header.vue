@@ -18,7 +18,8 @@
 
         <img class="close" v-if="about" src="../assets/commom/close.png" @click="$router.push('/home')">
         <div v-else class="right">
-            <l-button router="/about-me">关于我</l-button>
+            <l-button router="/home">关于我</l-button>
+            <!-- <l-button router="/about-me">关于我</l-button> -->
         </div>
 
     </div>
@@ -33,7 +34,7 @@
                 default: false
             }
         }
-    };
+    }
 </script>
 
 <style lang='less' scoped>

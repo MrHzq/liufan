@@ -85,6 +85,7 @@
                 }, 50);
             },
             goto() {
+                return false
                 let href = location.origin + location.pathname + '#/resume';
                 window.open(href);
             },
